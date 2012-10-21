@@ -1,0 +1,5 @@
+alias t='todo.sh'
+alias ta='todo.sh add'
+alias tl='todo.sh ls'
+
+alias ls='gls -a --color'
