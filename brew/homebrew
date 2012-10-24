@@ -19,6 +19,8 @@ fi
 brew install grc coreutils
 # Install unrar
 brew install unrar
+# Install mercurial (hg)
+brew install hg
 # Install todo.txt
 brew install todo-txt
 # Install postgresql
