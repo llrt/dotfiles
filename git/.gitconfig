@@ -1,0 +1,23 @@
+[user]
+	name = llrt
+	email = leandroloriato@gmail.com
+
+[core]
+    excludesfile = ~/.gitignore
+
+[alias]
+    br = branch
+    co = checkout
+    ci = commit
+    s = status
+    d = diff
+    l = log
+    h = help
+
+[push]
+    default = tracking
+
+[color]
+    ui = true
+    status = auto
+    branch = auto
