@@ -6,6 +6,7 @@ set expandtab
 set sw=4
 set softtabstop=4
 set nomodeline
+set nocompatible
 set hlsearch
 
 syntax on

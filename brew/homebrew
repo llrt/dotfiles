@@ -27,3 +27,5 @@ brew install postgresql
 brew install lua
 # Install luajit
 brew install luajit
+# Install go
+brew install go
