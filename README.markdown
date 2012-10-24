@@ -20,7 +20,8 @@ This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`, though.
 
 REMARK 1: currently, bootstrap script is made only for mac, as it uses homebrew (that's why I renamed it to bootstrap-mac)
-REMARK 2: currently, a file in path .dotfiles/a/b/c.symlink will be symlinked to ~/.c , not to ~/a/b/.c .
+
+REMARK 2: currently, a file in path .dotfiles/a/b/c.symlink will be symlinked to ~/.c , not to ~/a/b/.c 
 
 The main file you'll want to change right off the bat is `bash/bashrc.symlink`,
 which sets up a few paths that'll be different on your particular machine.
