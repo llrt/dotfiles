@@ -6,24 +6,27 @@ These are my personal dotfiles, based on holman's dotfile.
 
 ## install
 
-(Same as in holman's dotfile)
+(Pretty much the same as in holman's dotfile)
 
 Run this:
 
 ```sh
 git clone https://github.com/llrt/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/bootstrap
+./bootstrap-mac
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`, though.
 
-The main file you'll want to change right off the bat is `zsh/zshrc.symlink`,
+REMARK 1: currently, bootstrap script is made only for mac, as it uses homebrew (that's why I renamed it to bootstrap-mac)
+REMARK 2: currently, a file in path .dotfiles/a/b/c.symlink will be symlinked to ~/.c , not to ~/a/b/.c .
+
+The main file you'll want to change right off the bat is `bash/bashrc.symlink`,
 which sets up a few paths that'll be different on your particular machine.
 
 You'll also want to change `git/gitconfig.symlink`, which will set you up as
-committing as Zach Holman. You probably don't want that.
+committing as Leandro Loriato. You probably don't want that.
 
 
 ## thanks
