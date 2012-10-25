@@ -1,8 +1,11 @@
 #!/bin/bash
 # Based on holman's bootstrap file
-# bootstrap installs things.
+# bootstrap-mac installs things on a OS X machine.
 
-# Assume everyone's on OS X and run Homebrew (*nix-ers beware)
+# Set relevant OS X's settings
+. osx/set-defaults.sh
+
+# Assume everyone runs Homebrew
 . brew/homebrew
 
 # Run the install
