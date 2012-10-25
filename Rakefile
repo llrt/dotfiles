@@ -27,9 +27,11 @@ task :install do
         when 's' then next
         end
       end
+      puts "Overwriting #{target}" if overwrite || overwrite_all
       FileUtils.rm_rf(target) if overwrite || overwrite_all
       `mv "$HOME/.#{file}" "$HOME/.#{file}.backup"` if backup || backup_all
     end
+    puts "Linking #{target} to #{ENV["HOME"]}/#{linkable}"
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
 end

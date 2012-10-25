@@ -15,19 +15,83 @@ else
   echo "  + Homebrew found."
 fi
 
-# Install grc and coreutils
-brew install grc coreutils
-# Install unrar
-brew install unrar
-# Install mercurial (hg)
-brew install hg
-# Install todo.txt
-brew install todo-txt
-# Install postgresql
-brew install postgresql
-# Install lua
-brew install lua
-# Install luajit
-brew install luajit
-# Install go
-brew install go
+# Check for grc and install it if needed
+if test ! $(which grc)
+then
+    echo " grc not found. installing."
+    brew install grc
+else
+    echo " grc already installed."
+fi
+
+# Check for coreutils and install it if needed
+if test ! $(which gls)
+then
+    echo " coreutils not found. installing."
+    brew install coreutils
+else
+    echo " coreutils already installed."
+fi
+
+# Check for unrar and install it if needed
+if test ! $(which unrar)
+then
+    echo " unrar not found. installing."
+    brew install unrar
+else
+    echo " unrar already installed."
+fi
+
+# Check for mercurial (hg) and install it if needed
+if test ! $(which hg)
+then
+    echo " hg not found. installing."
+    brew install hg
+else
+    echo " hg already installed."
+fi
+
+# Check for todo.txt and install it if needed
+if test ! $(which todo.sh)
+then
+    echo " todo-txt not found. installing."
+    brew install todo-txt
+else
+    echo " todo-txt already installed."
+fi
+
+# Check for postgresql and install it if needed
+if test ! $(which postgres)
+then
+    echo " postgresql not found. installing."
+    brew install postgresql
+else
+    echo " postgresql already installed."
+fi
+
+# Check for lua and install it if needed
+if test ! $(which lua)
+then
+    echo " lua not found. installing."
+    brew install lua
+else
+    echo " lua already installed."
+fi
+
+# Check for luajit and install it if needed
+if test ! $(which luajit)
+then
+    echo " luajit not found. installing."
+    brew install luajit
+else
+    echo " luajit already installed."
+fi
+
+# Check for go and install it if needed
+if test ! $(which go)
+then
+    echo " go not found. installing."
+    brew install go
+else
+    echo " go already installed."
+fi
