@@ -1,21 +1,31 @@
-set number
-set ic
-set showmode
-set ts=4
-set expandtab
-set sw=4
-set softtabstop=4
-set nomodeline
+" general settings
 set nocompatible
-set hlsearch
+set nomodeline
+set number
+set ruler
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set showmode
+set showcmd
+set ttyfast
+set backspace=indent,eol,start
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set backupdir=~/tmp
+set laststatus=1
 
+" theme settings
+set background=dark
+colorscheme solarized
+
+" syntax highlighting settings
 syntax on
 filetype plugin on
 filetype indent on
 set ofu=syntaxcomplete#Complete
-set background=dark
-colorscheme solarized
-
 highlight Pmenu ctermfg=green ctermbg=black
 
 " folding settings
@@ -24,8 +34,15 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=0
 
+" search settings
+set ignorecase
+set smartcase
+set hlsearch
+
+" load other confs via bundle
 call pathogen#infect('bundle')
 
+" key maps
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
