@@ -95,3 +95,12 @@ then
 else
     echo " go already installed."
 fi
+
+# Check for imagemagick and install it if needed
+if test ! $(which convert)
+then
+    echo " imagemagick not found. installing."
+    brew install imagemagick
+else
+    echo " go already installed."
+fi
