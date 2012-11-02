@@ -1,0 +1,1 @@
+/Users/leandroloriato/go/misc/vim/ftdetect/gofiletype.vim

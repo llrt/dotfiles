@@ -1,0 +1,1 @@
+/Users/leandroloriato/go/misc/vim/indent/go.vim

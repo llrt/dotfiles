@@ -1,0 +1,1 @@
+/Users/leandroloriato/go/misc/vim/ftplugin/go/import.vim
