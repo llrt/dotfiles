@@ -33,6 +33,15 @@ else
     echo " coreutils already installed."
 fi
 
+# Check for ack and install it if needed
+if test ! $(which ack)
+then
+    echo " ack not found. installing."
+    brew install ack
+else
+    echo " ack already installed."
+fi
+
 # Check for unrar and install it if needed
 if test ! $(which unrar)
 then
@@ -102,5 +111,5 @@ then
     echo " imagemagick not found. installing."
     brew install imagemagick
 else
-    echo " go already installed."
+    echo " imagemagick already installed."
 fi
