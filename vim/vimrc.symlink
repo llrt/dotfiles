@@ -14,8 +14,10 @@ set backspace=indent,eol,start
 set wildmenu
 set wildmode=list:longest
 set cursorline
+set directory=~/tmp
 set backupdir=~/tmp
 set laststatus=1
+let mapleader=','
 
 " theme settings
 set background=dark
@@ -47,4 +49,10 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+map <Leader>s :split<CR>
+map <Leader>S :vsplit<CR>
+noremap <Leader>= gg=G`` " Run == formatting on the entire file and return to original position - via davejacobs
 
+" other useful hacks
+" with w!! do sudo - even if you didn't open the file as root - via davejacobs
+cmap w!! %!sudo tee > /dev/null % 
