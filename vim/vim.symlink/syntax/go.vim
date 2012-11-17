@@ -1,1 +1,1 @@
-/Users/leandroloriato/go/misc/vim/syntax/go.vim
+/Users/llrt/go/misc/vim/syntax/go.vim

@@ -8,5 +8,5 @@
 # Assume everyone runs Homebrew
 . brew/homebrew
 
-# Run the install
+# Install and link other relevant files
 rake install

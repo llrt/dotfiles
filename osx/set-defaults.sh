@@ -298,6 +298,13 @@ while true; do
             # Bottom right screen corner -> Desktop
             defaults write com.apple.dock wvous-br-corner -int 4
             defaults write com.apple.dock wvous-br-modifier -int 0
+            # Upper left screen corner -> Nothing
+            defaults write com.apple.dock wvous-ul-corner -int 0
+            defaults write com.apple.dock wvous-ul-modifier -int 0
+            # Upper right screen corner -> Nothing
+            defaults write com.apple.dock wvous-ur-corner -int 0
+            defaults write com.apple.dock wvous-ur-modifier -int 0
+
 
             ###############################################################################
             # iTunes                                                                      #

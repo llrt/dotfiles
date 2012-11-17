@@ -9,6 +9,8 @@ set shiftwidth=4
 set softtabstop=4
 set showmode
 set showcmd
+set splitbelow
+set splitright
 set ttyfast
 set backspace=indent,eol,start
 set wildmenu

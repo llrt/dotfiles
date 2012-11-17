@@ -105,6 +105,15 @@ else
     echo " go already installed."
 fi
 
+# Check for rubinius and install it if needed
+if test ! $(which rbx)
+then
+    echo " rubinius not found. installing."
+    brew install rbx
+else
+    echo " rubinius already installed."
+fi
+
 # Check for imagemagick and install it if needed
 if test ! $(which convert)
 then
@@ -113,3 +122,22 @@ then
 else
     echo " imagemagick already installed."
 fi
+
+# Check for gfortran and install it if needed
+if test ! $(which gfortran)
+then
+    echo " gfortran not found. installing."
+    brew install gfortran
+else
+    echo " gfortran already installed."
+fi
+
+# Check for R and install it if needed
+if test ! $(which r)
+then
+    echo " R not found. installing."
+    brew install r
+else
+    echo " R already installed."
+fi
+
