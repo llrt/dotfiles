@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case $1 in
+
+
+start)
+	sudo su postgres -c '/usr/local/bin/pg_ctl -D /opt/local/var/db/postgresql90/defaultdb start'
+	;;
+stop) 
+	sudo su postgres -c '/usr/local/bin/pg_ctl -D /opt/local/var/db/postgresql90/defaultdb stop'
+	;;
+
+esac
+
+
