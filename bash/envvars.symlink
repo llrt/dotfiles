@@ -1,4 +1,9 @@
+# general envvars
 export PATH=/usr/local/bin:$PATH
 export APACHE_WWW_ROOT=/Library/WebServer/Documents/
 export MATLAB=/Applications/MATLAB_R2012a_Student.app
+
+# dev specific envvars
 export RUBYOPT=rubygems
+export RBXOPT=rubygems
+

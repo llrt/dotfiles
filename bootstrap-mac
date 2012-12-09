@@ -5,8 +5,11 @@
 # Set relevant OS X's settings
 . osx/set-defaults.sh
 
-# Assume everyone runs Homebrew
-. brew/homebrew
+# Assume everyone runs Homebrew and install relevant packages
+. brew/homebrew.sh
+
+# Install relevant ruby gems
+. ruby/gem-install.sh
 
 # Install and link other relevant files
 rake install
