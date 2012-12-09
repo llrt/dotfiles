@@ -25,7 +25,6 @@ while true; do
             # Set computer name (as done via System Preferences -> Sharing)
             sudo /usr/sbin/scutil --set ComputerName "Llrt MacPro"
             sudo /usr/sbin/scutil --set HostName "llrt_macpro"
-            sudo /usr/sbin/scutil --set LocalHostName "llrt_macpro"
             sudo /usr/bin/defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Llrt Macpro"
 
             # Menu bar: disable transparency
@@ -119,7 +118,13 @@ while true; do
             defaults write NSGlobalDomain KeyRepeat -int 0
 
             # Automatically illuminate built-in MacBook keyboard in low light
+            defaults write com.apple.BezelServices kEnabled -bool true
             defaults write com.apple.BezelServices kDim -bool true
+            # Adjust levels of brightness for the backlight
+            defaults write com.apple.BezelServices kHigh -float 1 # default = 0.832
+            defaults write com.apple.BezelServices kLow -float 0 # default = 0.766
+            defaults write com.apple.BezelServices kHWMax -float 1 # default = 1
+            defaults write com.apple.BezelServices kHWMin -float 0 # default = 0.048888
             # Turn off keyboard illumination when computer is not used for 1.5 minutes
             defaults write com.apple.BezelServices kDimTime -int 90
 
