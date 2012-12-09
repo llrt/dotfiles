@@ -118,7 +118,7 @@ fi
 if test ! $(which convert)
 then
     echo " imagemagick not found. installing."
-    brew install imagemagick
+    brew install imagemagick --withx
 else
     echo " imagemagick already installed."
 fi
@@ -141,3 +141,11 @@ else
     echo " R already installed."
 fi
 
+# Check for gnuplot and install it if needed
+if test ! $(which gnuplot)
+then
+    echo " gnuplot not found. installing."
+    brew install gnuplot
+else
+    echo " gnuplot already installed."
+fi
