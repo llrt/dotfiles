@@ -12,9 +12,10 @@ function admin_perm(){
 
 function install_as_needed(){
     local GEM=$1
+    local OPT=$2
     if test ! $(gem which $GEM); then
         echo "$GEM not found. installing."
-        admin_perm && sudo gem install $GEM
+        admin_perm && sudo gem install $GEM $OPT
     else
         echo " $GEM already installed."
     fi
@@ -26,3 +27,6 @@ install_as_needed 'rmagick'
 
 # Check for gnuplot gem and install it if needed
 install_as_needed 'gnuplot'
+
+# Check for rsruby gem and install it if needed
+install_as_needed 'rsruby' "-- --with-R-dir=$R_HOME"

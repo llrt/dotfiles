@@ -6,4 +6,4 @@ export MATLAB=/Applications/MATLAB_R2012a_Student.app
 # dev specific envvars
 export RUBYOPT=rubygems
 export RBXOPT=rubygems
-
+export R_HOME=/usr/local/Cellar/r/2.15.1/R.framework/Resources

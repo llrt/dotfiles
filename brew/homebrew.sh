@@ -71,7 +71,7 @@ install_as_needed 'convert' 'imagemagick' '--withx'
 install_as_needed 'gfortran' 'gfortran'
 
 # Check for R and install it if needed
-install_as_needed 'r' 'r'
+install_as_needed 'r' 'r' '--enable-R-framework'
 
 # Check for gnuplot and install it if needed
 install_as_needed 'gnuplot' 'gnuplot'
