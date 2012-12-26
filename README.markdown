@@ -26,8 +26,8 @@ REMARK 2: currently, a file in path .dotfiles/a/b/c.symlink will be symlinked to
 The main file you'll want to change right off the bat is `bash/bashrc.symlink`,
 which sets up a few paths that'll be different on your particular machine.
 
-You'll also want to change `git/gitconfig.symlink`, which will set you up as
-committing as Leandro Loriato. You probably don't want that.
+You'll also want to change `git/gitconfig.symlink`, which by default will set you up as
+committing as llrt. You probably don't want that.
 
 
 ## thanks
