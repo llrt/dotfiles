@@ -8,6 +8,9 @@
 # Assume everyone runs Homebrew and install relevant packages
 . brew/homebrew.sh
 
+# Install rvm and needed versions of ruby
+. ruby/rvm-install.sh
+
 # Install relevant ruby gems
 . ruby/gem-install.sh
 

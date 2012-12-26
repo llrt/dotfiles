@@ -37,6 +37,14 @@ install_as_needed 'grc' 'grc'
 # Check for coreutils and install it if needed
 install_as_needed 'gls' 'coreutils' 
 
+# Tap another repository
+brew tap homebrew/dupes
+
+# Check for autoconf, automake, apple-gcc42 and install them if needed
+install_as_needed 'autoconf' 'autoconf'
+install_as_needed 'automake' 'automake'
+install_as_needed 'gcc-4.2' 'apple-gcc42'
+
 # Check for ack and install it if needed
 install_as_needed 'ack' 'ack'
 
@@ -61,17 +69,21 @@ install_as_needed 'luajit' 'luajit'
 # Check for go and install it if needed
 install_as_needed 'go' 'go'
 
-# Check for rubinius and install it if needed
-install_as_needed 'rbx' 'rubinius' 
-
 # Check for imagemagick and install it if needed
 install_as_needed 'convert' 'imagemagick' '--withx'
+
+# Check for PIL and install it if needed
+install_as_needed 'pil' 'pil'
 
 # Check for gfortran and install it if needed
 install_as_needed 'gfortran' 'gfortran'
 
 # Check for R and install it if needed
 install_as_needed 'r' 'r' '--enable-R-framework'
+sudo ln -s "/usr/local/opt/r/R.framework" /Library/Frameworks
 
 # Check for gnuplot and install it if needed
 install_as_needed 'gnuplot' 'gnuplot'
+
+# Check for mongodb and install it if needed
+install_as_needed 'mongod' 'mongodb'

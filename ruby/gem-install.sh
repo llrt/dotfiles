@@ -15,12 +15,15 @@ function install_as_needed(){
     local OPT=$2
     if test ! $(gem which $GEM); then
         echo "$GEM not found. installing."
-        admin_perm && sudo gem install $GEM $OPT
+        gem install $GEM $OPT
     else
         echo " $GEM already installed."
     fi
 }
 
+
+# Check for rmagick gem and install it if needed
+install_as_needed 'active_support'
 
 # Check for rmagick gem and install it if needed
 install_as_needed 'rmagick'
@@ -30,3 +33,10 @@ install_as_needed 'gnuplot'
 
 # Check for rsruby gem and install it if needed
 install_as_needed 'rsruby' "-- --with-R-dir=$R_HOME"
+
+# Check for bson_ext gem and install it if needed
+install_as_needed 'bson_ext'
+
+# Check for mongodb gem and install it if needed
+install_as_needed 'mongodb'
+

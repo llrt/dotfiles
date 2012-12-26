@@ -1,3 +1,2 @@
 #!/bin/bash
-mongod -dbpath /opt/local/share/mongodb/data/db/
-
+mongod --port 27017 --dbpath /usr/local/var/mongodb 
