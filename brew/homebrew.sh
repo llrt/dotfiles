@@ -8,11 +8,10 @@
 echo "Setting up Homebrew packages..."
 
 function install_as_needed(){
-    local CMD=$1
-    local PACKAGE=$2
-    local OPT=$3
+    local PACKAGE=$1
+    local OPT=$2
 
-    if test ! $(which $CMD); then
+    if test ! $(brew list | grep $PACKAGE); then
         echo "$PACKAGE not found. installing."
         brew install $PACKAGE $OPT
     else
@@ -32,58 +31,59 @@ else
 fi
 
 # Check for grc and install it if needed
-install_as_needed 'grc' 'grc'
+install_as_needed 'grc'
 
 # Check for coreutils and install it if needed
-install_as_needed 'gls' 'coreutils' 
+install_as_needed 'coreutils' 
 
 # Tap another repository
 brew tap homebrew/dupes
 
 # Check for autoconf, automake, apple-gcc42 and install them if needed
-install_as_needed 'autoconf' 'autoconf'
-install_as_needed 'automake' 'automake'
-install_as_needed 'gcc-4.2' 'apple-gcc42'
+install_as_needed 'autoconf'
+install_as_needed 'automake'
+install_as_needed 'apple-gcc42'
 
 # Check for ack and install it if needed
-install_as_needed 'ack' 'ack'
+install_as_needed 'ack'
 
 # Check for unrar and install it if needed
-install_as_needed 'unrar' 'unrar'
+install_as_needed 'unrar'
 
 # Check for mercurial (hg) and install it if needed
-install_as_needed 'hg' 'hg'
+install_as_needed 'mercurial'
 
 # Check for todo.txt and install it if needed
-install_as_needed 'todo.sh' 'todo-txt' 
+install_as_needed 'todo-txt' 
 
 # Check for postgresql and install it if needed
-install_as_needed 'postgres' 'postgresql' 
+install_as_needed 'postgresql' 
 
 # Check for lua and install it if needed
-install_as_needed 'lua' 'lua'
+install_as_needed 'lua'
 
 # Check for luajit and install it if needed
-install_as_needed 'luajit' 'luajit'
+install_as_needed 'luajit'
 
 # Check for go and install it if needed
-install_as_needed 'go' 'go'
+install_as_needed 'go'
 
 # Check for imagemagick and install it if needed
-install_as_needed 'convert' 'imagemagick' '--withx'
+install_as_needed 'imagemagick' '--withx'
 
 # Check for PIL and install it if needed
-install_as_needed 'pil' 'pil'
+install_as_needed 'pil'
 
 # Check for gfortran and install it if needed
-install_as_needed 'gfortran' 'gfortran'
+install_as_needed 'gfortran'
 
 # Check for R and install it if needed
-install_as_needed 'r' 'r' '--enable-R-framework'
+install_as_needed 'r' '--enable-R-framework'
 sudo ln -s "/usr/local/opt/r/R.framework" /Library/Frameworks
 
 # Check for gnuplot and install it if needed
-install_as_needed 'gnuplot' 'gnuplot'
+install_as_needed 'gnuplot'
 
 # Check for mongodb and install it if needed
-install_as_needed 'mongod' 'mongodb'
+install_as_needed 'mongodb'
+

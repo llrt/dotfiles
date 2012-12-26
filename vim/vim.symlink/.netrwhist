@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/llrt/workspace/mc4arm'
-let g:netrw_dirhist_2='/Users/llrt/workspace/mc4arm/.git'
-let g:netrw_dirhist_3='/Users/llrt/.dotfiles/ruby'
-let g:netrw_dirhist_4='/Users/llrt/workspace/ruby'
-let g:netrw_dirhist_5='/Users/llrt/workspace/mc4arm'
-let g:netrw_dirhist_6='/Users/llrt/workspace/mc4arm/data'
