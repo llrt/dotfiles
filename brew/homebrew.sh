@@ -71,9 +71,6 @@ install_as_needed 'go'
 # Check for imagemagick and install it if needed
 install_as_needed 'imagemagick' '--withx'
 
-# Check for PIL and install it if needed
-install_as_needed 'pil'
-
 # Check for gfortran and install it if needed
 install_as_needed 'gfortran'
 

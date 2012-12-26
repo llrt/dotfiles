@@ -4,6 +4,7 @@ export APACHE_WWW_ROOT=/Library/WebServer/Documents/
 export MATLAB=/Applications/MATLAB_R2012a_Student.app
 
 # dev specific envvars
+export PYTHONPATH=/usr/local/share/python/
 export RUBYOPT=rubygems
 export RBXOPT=rubygems
 export R_HOME=/Library/Frameworks/R.framework/Resources/
