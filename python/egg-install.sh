@@ -4,9 +4,10 @@
 
 echo "Setting up python eggs... "
 
-
 # Install PIL
-easy_install pil
+pip install PIL
 
 # Install Pygments
-easy_install Pygments
+pip install Pygments
+# Point pygmentize script to the correct python bin (the one from Homebrew)
+sudo sed -i -e "s#\/usr#\/usr\/local#g" `which pygmentize`

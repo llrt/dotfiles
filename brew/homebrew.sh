@@ -59,6 +59,9 @@ install_as_needed 'todo-txt'
 # Check for postgresql and install it if needed
 install_as_needed 'postgresql' 
 
+# Check for python and install it if needed
+install_as_needed 'python'
+
 # Check for lua and install it if needed
 install_as_needed 'lua'
 
