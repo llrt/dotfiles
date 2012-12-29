@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # This installs rvm and some versions of ruby
 
@@ -7,6 +7,8 @@ if test ! $(which rvm); then
     echo " rvm not found. installing."
     \curl -L https://get.rvm.io | bash -s stable --ruby
 
+    # Configure openssl on rvm
+    rvm pkg install openssl
 else
     echo " rvm already installed."
 fi
@@ -15,9 +17,6 @@ fi
 if [[ -s $HOME/.rvm/scripts/rvm ]]; then
     source $HOME/.rvm/scripts/rvm;
 fi
-
-# Configure openssl on rvm
-rvm pkg install openssl
 
 export CPPFLAGS=-I/opt/X11/include
 

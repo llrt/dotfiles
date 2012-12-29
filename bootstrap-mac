@@ -1,9 +1,12 @@
-#!/bin/bash
+#!/bin/zsh
 # Based on holman's bootstrap file
 # bootstrap-mac installs things on a OS X machine.
 
+# Set ZSH as default shell
+chsh -s /bin/zsh
+
 # Set relevant OS X's settings
-. osx/set-defaults.sh
+#. osx/set-defaults.sh
 
 # Assume everyone runs Homebrew and install relevant packages
 . brew/homebrew.sh

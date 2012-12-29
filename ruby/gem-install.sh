@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 #
 # This installs some of the common ruby gems needed (or at least desired).
 

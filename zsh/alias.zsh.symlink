@@ -9,6 +9,7 @@ alias tl='todo.sh ls'
 
 # Make ls colorful
 alias ls='gls -a --color'
+alias ll='ls -l'
 
 # Command to clear out ASL logs to keep Terminal startup time super-speedy - via davejacobs
 alias cleanterm="sudo rm -f /private/var/log/asl/*.asl"

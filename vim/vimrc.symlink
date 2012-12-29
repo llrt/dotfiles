@@ -58,3 +58,6 @@ noremap <Leader>= gg=G`` " Run == formatting on the entire file and return to or
 " other useful hacks
 " with w!! do sudo - even if you didn't open the file as root - via davejacobs
 cmap w!! %!sudo tee > /dev/null % 
+
+" Delete unneeded .netrwhist file
+au VimLeave * if filereadable("~/.vim/.netrwhist")|call delete("~/.vim/.netrwhist")|endif 
