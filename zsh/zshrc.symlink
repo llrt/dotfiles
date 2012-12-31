@@ -9,6 +9,8 @@ setopt EXTENDED_HISTORY		# puts timestamps in the history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
 setopt AUTO_LIST
 setopt AUTO_PUSHD
+setopt PUSHD_SILENT
+setopt PUSHD_IGNORE_DUPS
 unsetopt BG_NICE
 setopt CORRECT			# command CORRECTION
 

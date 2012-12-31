@@ -5,7 +5,8 @@
 #
 
 while true; do
-    read -p "Do you wish to override current OS X' defaults? [y|n] " yn
+    echo "Do you wish to override current OS X' defaults? [y|n] "
+    read yn
     case $yn in
         [y]* ) 
             echo "Defaults will be overriden";
