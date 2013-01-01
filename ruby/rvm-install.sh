@@ -27,5 +27,5 @@ rvm install 1.8.7
 rvm install 1.9.2
 
 # Use version 1.9.2 of MRI by default
-rvm use 1.9.2 --default
+rvm use 1.8.7 --default
 
