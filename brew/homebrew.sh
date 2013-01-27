@@ -87,3 +87,5 @@ install_as_needed 'gnuplot'
 # Check for mongodb and install it if needed
 install_as_needed 'mongodb'
 
+# Check for nodejs and install it if needed
+install_as_needed 'node'
