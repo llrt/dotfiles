@@ -1,5 +1,5 @@
 # general envvars
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/.scripts/:$PATH
 export APACHE_WWW_ROOT=/Library/WebServer/Documents/
 export MATLAB=/Applications/MATLAB_R2012a_Student.app
 
