@@ -40,3 +40,5 @@ install_as_needed 'bson_ext'
 # Check for mongodb gem and install it if needed
 install_as_needed 'mongodb'
 
+# Check for log4r gem and install it if needed
+install_as_needed 'log4r'
