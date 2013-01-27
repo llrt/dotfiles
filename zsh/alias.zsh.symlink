@@ -1,3 +1,6 @@
+# zsh's replacement
+alias r=/usr/local/bin/r
+
 # Programming aliases
 alias py="python"
 alias rb="ruby"
