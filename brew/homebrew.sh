@@ -47,6 +47,9 @@ install_as_needed 'apple-gcc42'
 # Check for ack and install it if needed
 install_as_needed 'ack'
 
+# Check for ag and install it if needed
+install_as_needed 'the_silver_searcher'
+
 # Check for unrar and install it if needed
 install_as_needed 'unrar'
 
