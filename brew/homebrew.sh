@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #
 # Homebrew
 #
@@ -92,3 +92,6 @@ install_as_needed 'mongodb'
 
 # Check for nodejs and install it if needed
 install_as_needed 'node'
+
+# Check for readline and install it if needed
+install_as_needed 'readline'

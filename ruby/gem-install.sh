@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #
 # This installs some of the common ruby gems needed (or at least desired).
 
@@ -42,3 +42,15 @@ install_as_needed 'mongodb'
 
 # Check for log4r gem and install it if needed
 install_as_needed 'log4r'
+
+# Check for rb-fsevent gem and install it if needed
+install_as_needed 'rb-fsevent'
+
+# Check for guard gem and install it if needed
+install_as_needed 'guard'
+
+# Check for guard-shell gem and install it if needed
+install_as_needed 'guard-shell'
+
+# Check for terminal-notifier-guard gem and install it if needed
+install_as_needed 'terminal-notifier-guard'

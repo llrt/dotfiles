@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #
 # This installs some of the common python eggs needed (or at least desired)
 

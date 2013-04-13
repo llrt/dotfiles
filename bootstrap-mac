@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Based on holman's bootstrap file
 # bootstrap-mac installs things on a OS X machine.
 
@@ -11,7 +11,10 @@ chsh -s /bin/zsh
 # Assume everyone runs Homebrew and install relevant packages
 . brew/homebrew.sh
 
-# Install rvm and needed versions of ruby
+# Install rvm
+. ruby/rvm-install.sh
+
+# Install needed versions of ruby via rvm
 . ruby/rvm-install.sh
 
 # Install relevant ruby gems

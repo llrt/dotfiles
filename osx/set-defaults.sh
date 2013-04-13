@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Sets reasonable OS X defaults.
 #
 # Strongly Based on the original ones from holman (https://github.com/holman/dotfiles/blob/master/osx/set-defaults.sh) and mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.osx) .
