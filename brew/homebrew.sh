@@ -44,6 +44,9 @@ install_as_needed 'autoconf'
 install_as_needed 'automake'
 install_as_needed 'apple-gcc42'
 
+# Check for wget and install it if needed
+install_as_needed 'wget'
+
 # Check for ack and install it if needed
 install_as_needed 'ack'
 
