@@ -23,5 +23,8 @@ chsh -s /bin/zsh
 # Install relevant python eggs
 . python/egg-install.sh
 
+# Install relevant R packages
+r --quiet -f R/package-install.r
+
 # Install and link other relevant files
 rake install
