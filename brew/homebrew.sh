@@ -37,7 +37,10 @@ install_as_needed 'grc'
 install_as_needed 'coreutils' 
 
 # Tap another repository
+brew untap homebrew/dupes # untap just to be sure to get latest info
+brew untap homebrew/science # untap just to be sure to get latest info
 brew tap homebrew/dupes
+brew tap homebrew/science
 
 # Check for autoconf, automake, apple-gcc42 and install them if needed
 install_as_needed 'autoconf'
@@ -90,11 +93,47 @@ sudo ln -s "/usr/local/opt/r/R.framework" /Library/Frameworks
 # Check for gnuplot and install it if needed
 install_as_needed 'gnuplot'
 
+# Check for gsl and install it if needed
+install_as_needed 'gsl'
+
 # Check for mongodb and install it if needed
 install_as_needed 'mongodb'
 
 # Check for nodejs and install it if needed
 install_as_needed 'node'
 
+# Check for pcre and install it if needed
+install_as_needed 'pcre'
+
+# Check for ocaml and install it if needed
+install_as_needed 'ocaml'
+
+# Check for opam and install it if needed
+install_as_needed 'opam'
+
 # Check for readline and install it if needed
 install_as_needed 'readline'
+
+# Check for antlr and install it if needed
+install_as_needed 'antlr'
+
+# Tap another repository
+brew tap homebrew/versions
+
+# Check for erlang (R16) and install it if needed
+install_as_needed 'erlang-r16'
+
+# Check for elixir and install it if needed
+install_as_needed 'elixir'
+
+# Check for couchdb and install it if needed
+install_as_needed 'couchdb'
+
+# Check for jython and install it if needed
+install_as_needed 'jython'
+
+# Check for maven and install it if needed
+install_as_needed 'maven'
+
+# Check for watchman and install it if needed
+install_as_needed 'watchman'

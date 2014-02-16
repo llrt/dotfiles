@@ -1,9 +1,10 @@
 # general envvars
-export PATH=/usr/local/bin:/usr/local/texlive/2011basic/bin/universal-darwin/:$PATH
-export APACHE_WWW_ROOT=/Library/WebServer/Documents/
+export APACHE_WWW_ROOT=/Library/WebServer/Documents
 export MATLAB=/Applications/MATLAB_R2012a_Student.app
+export TEXHOME=/usr/local/texlive/2013basic/texmf-dist
+export PATH=/usr/local/bin:$TEXHOME/../bin/universal-darwin:$PATH
 
 # dev specific envvars
 export RUBYOPT=rubygems
 export RBXOPT=rubygems
-export R_HOME=/usr/local/Cellar/r/2.15.2/R.framework/Resources
+export R_HOME=/usr/local/Cellar/r/3.0.1/R.framework/Resources

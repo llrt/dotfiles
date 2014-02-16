@@ -54,3 +54,6 @@ install_as_needed 'guard-shell'
 
 # Check for terminal-notifier-guard gem and install it if needed
 install_as_needed 'terminal-notifier-guard'
+
+# Check for jekyll gem and install it if needed
+install_as_needed 'jekyll'
