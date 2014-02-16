@@ -1,4 +1,4 @@
 cd = setwd
 pwd = getwd
 options(repos="http://cran.fiocruz.br")
-options(max.print=50000)
+options(max.print=1000000)
