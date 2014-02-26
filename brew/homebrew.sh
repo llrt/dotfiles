@@ -2,7 +2,7 @@
 #
 # Homebrew
 #
-# This installs some of the common dependencies needed (or at least desired)
+# This installs some of the common needed (or at least desired) dependencies
 # using Homebrew.
 
 echo "Setting up Homebrew packages..."
@@ -39,8 +39,10 @@ install_as_needed 'coreutils'
 # Tap another repository
 brew untap homebrew/dupes # untap just to be sure to get latest info
 brew untap homebrew/science # untap just to be sure to get latest info
+brew untap staticfloat/julia # untap just to be sure to get latest info
 brew tap homebrew/dupes
 brew tap homebrew/science
+brew tap staticfloat/julia
 
 # Check for autoconf, automake, apple-gcc42 and install them if needed
 install_as_needed 'autoconf'
@@ -137,3 +139,6 @@ install_as_needed 'maven'
 
 # Check for watchman and install it if needed
 install_as_needed 'watchman'
+
+# Check for julia and install it if needed
+install_as_needed 'julia' '--64bit'
