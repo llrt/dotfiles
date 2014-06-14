@@ -16,14 +16,18 @@ set backspace=indent,eol,start
 set wildmenu
 set wildmode=list:longest
 set cursorline
-set directory=~/tmp
-set backupdir=~/tmp
+set nobackup
+set noswapfile
 set laststatus=1
+set title
+set visualbell
+set noerrorbells
 let mapleader=','
+nnoremap ; :
 
 " theme settings
 set background=dark
-colorscheme solarized
+colorscheme lunarized
 
 " syntax highlighting settings
 syntax on
