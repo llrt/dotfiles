@@ -1,0 +1,37 @@
+snippet #!
+	#!/usr/bin/env julia
+	# File: `expand('%:t')`
+	# Description: ${2:}
+	${3:}
+# flow-control
+snippet if
+	if ${1:}
+		${2:}
+	end
+snippet else
+	else ${1:}
+		${2:}
+snippet elif
+	elseif ${1:}
+		${2:}
+snippet func
+	function ${1:}
+		${2:}
+	end
+snippet for
+	for ${1:}
+		${2:}
+	end
+snippet while
+	while ${1:}
+		${2:}
+	end
+snippet type
+	type ${1:}
+		${2:}
+	end
+# open file
+snippet file
+	open("${1:}", "w") do file
+		${2:}
+	end

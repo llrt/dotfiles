@@ -57,7 +57,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <Leader>s :split<CR>
 map <Leader>S :vsplit<CR>
-noremap <Leader>= gg=G`` " Run == formatting on the entire file and return to original position - via davejacobs
+nnoremap j gj
+nnoremap k gk
 
 " other useful hacks
 " with w!! do sudo - even if you didn't open the file as root - via davejacobs
