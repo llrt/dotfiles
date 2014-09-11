@@ -28,3 +28,6 @@ install_as_needed 'virtualbox'
 
 # Check for vagrant and install it if needed
 install_as_needed 'vagrant'
+
+# Check for sourcetree and install it if needed
+install_as_needed 'sourcetree'

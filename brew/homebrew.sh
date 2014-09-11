@@ -141,4 +141,11 @@ install_as_needed 'maven'
 install_as_needed 'watchman'
 
 # Check for julia and install it if needed
+brew link arpack-julia suite-sparse-julia
 install_as_needed 'julia' '--64bit'
+
+# Check for markdown and install it if needed
+install_as_needed 'markdown'
+
+# Check for git-flow and install it if needed
+install_as_needed 'git-flow'

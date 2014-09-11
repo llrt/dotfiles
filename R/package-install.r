@@ -37,3 +37,6 @@ install.packages("fExtremes")
 # Spectral Analysis packages
 install.packages("hht")
 install.packages("wavelets")
+
+# Parallel programming packages
+install.packages("doParallel")
