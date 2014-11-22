@@ -149,3 +149,6 @@ install_as_needed 'markdown'
 
 # Check for git-flow and install it if needed
 install_as_needed 'git-flow'
+
+# Check for llvm and install it if needed
+install_as_needed 'llvm'

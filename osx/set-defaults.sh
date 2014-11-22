@@ -386,17 +386,6 @@ while true; do
 
 
             ###############################################################################
-            # System
-            ###############################################################################
-
-            echo "Tweaking System settings"
-
-            # Disable paging, in order to optimize SSD
-            sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.dynamic_pager.plist
-            # Remove swapfiles
-            sudo rm /private/var/vm/swapfile*
-
-            ###############################################################################
             # Kill affected applications                                                  #
             ###############################################################################
 

@@ -1,4 +1,5 @@
 # general envvars
+export JAVA_HOME=$(/usr/libexec/java_home)
 export APACHE_WWW_ROOT=/Library/WebServer/Documents
 export MATLAB=/Applications/MATLAB_R2012a_Student.app
 export TEXHOME=/usr/local/texlive/2013basic/texmf-dist

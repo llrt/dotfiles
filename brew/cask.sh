@@ -31,3 +31,6 @@ install_as_needed 'vagrant'
 
 # Check for sourcetree and install it if needed
 install_as_needed 'sourcetree'
+
+# Check for chef and install it if needed
+install_as_needed 'chefdk'
